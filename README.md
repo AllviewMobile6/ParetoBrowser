@@ -12,6 +12,9 @@ Currently Pareto browser is parsing HTML websites and converting them to Pareto 
 
 ## Type 1: Article
 
+![Article example](https://raw.githubusercontent.com/AllviewMobile6/ParetoBrowser/main/screenshot/480x493/article.jpg)
+![Article with comments example](https://raw.githubusercontent.com/AllviewMobile6/ParetoBrowser/main/screenshot/480x493/comments.jpg)
+
 Typical news article, with pictures. You can read article. There can be comments at the bottom.
 
     {
@@ -55,6 +58,8 @@ Typical news article, with pictures. You can read article. There can be comments
     }
 
 ## Type 2: Aggregator
+
+![Aggregator example](https://raw.githubusercontent.com/AllviewMobile6/ParetoBrowser/main/screenshot/480x493/aggregator.jpg)
 
 Typical news homepage with list of most recent news articles. You can read article or comments. You can hide articles.
 
