@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bookmarkThis"
+        android:title="Bookmark this" />
+    <item android:id="@+id/bookmarks"
+        android:title="Bookmarks" />
+
+    <item android:id="@+id/flip"
+        android:title="Hidden/Visible" />
+
+    <item android:id="@+id/console"
+        android:title="Console data" />
+    <item android:id="@+id/update" android:visible="false"
+        android:title="Check for updates" />
+</menu>

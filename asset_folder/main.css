@@ -1,0 +1,189 @@
+/* main stylesheet for rendered pages */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: large;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 1ex;
+    font-size: small;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+/* ------- contextMenu -------- */
+
+.contextMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: silver;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20000;
+}
+.contextMenu ul {
+    background-color: white;
+    border-radius: 1ex;
+    padding: 0;
+    list-style: none;
+}
+.contextMenu ul li {
+    line-height: 0.7cm;
+    text-align: center;
+    user-select: none;
+    padding: 0.5ex 2ex 0.5ex 2ex;
+    border-radius: 1ex;
+}
+.contextMenu ul li:active {
+    background-color: skyblue;
+}
+
+/* ------- article -------- */
+
+.article pre {
+    max-width: 100vw;
+    overflow-x: scroll;
+}
+
+.article h1, .article h2 {
+    padding-left: 1ex;
+}
+
+.article .content {
+    padding-left: 1ex;
+}
+
+.article figure {
+    margin: 0;
+}
+.article img {
+    max-width: calc(100vw - 2ex);
+}
+
+.article p, .article figcaption {
+    padding-left: 1ex;
+    padding-right: 1ex;
+}
+
+/* ------- comments -------- */
+
+.comments {
+    border-top: 1px solid gray;
+    padding-top: 1ex;
+    margin: 1ex;
+}
+
+.comments h1 {
+    padding-left: 0;
+}
+.comments .details {
+    color: green;
+}
+.comments .details .collapse {
+    cursor: pointer;
+    color: blue;
+    padding-left: 0;
+    padding-right: 1ex;
+    user-select: none;
+}
+.comments .details .author:after {
+    content: ", ";
+}
+
+.comments .comment {
+    margin-bottom: 2ex;
+}
+.comments .comment p {
+    margin: 0;
+    margin-top: 1ex;
+    padding-left: 0;
+}
+
+.comments .replies {
+    margin-left: 3ex;
+    border-left: none;
+    margin-bottom: 2ex;
+}
+
+.comments .reply {
+    color: blue;
+    margin-left: 1ex;
+}
+.comments .reply:after {
+    content: "↗";
+    vertical-align: super;
+    font-size: x-small;
+}
+
+/* ------- aggregator -------- */
+
+.aggregator {
+    padding-left: 1ex;
+    padding-right: 1ex;
+}
+
+.aggregator .item {
+    margin-bottom: 1ex;
+}
+
+.aggregator a {
+    text-decoration: none;
+    color: inherit;
+}
+.aggregator a:hover {
+    text-decoration: underline;
+}
+.aggregator a:visited {
+    opacity: 0.7; /* for some reason not working */
+    color: gray;
+}
+
+.aggregator .item .details {
+    font-size: small;
+    opacity: 0.7;
+}
+
+.aggregator .item .details .comments_count {
+    margin-right: 1ex;
+}
+.aggregator .item .details .age {
+    margin-right: 1ex;
+}
+.aggregator .item .details .submitter {
+    margin-left: 1ex;
+    margin-right: 1ex;
+}
+.aggregator .item .details .score {
+    margin-right: 1ex;
+}
+.aggregator .item .details .hide {
+    cursor: pointer;
+}
+.aggregator .item .menu {
+    width: 0.7cm;
+    height: 0.7cm;
+    border: none;
+    border-radius: 0.35cm;
+    background-color: gray;
+    background-color: rgba(0,0,0,0.3);
+    float: right;
+    outline: none;
+    margin-left: 4px;
+}
+.aggregator .item .menu:active {
+    background-color: skyblue;
+}
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Console</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="utils.js"></script>
+    <script type="text/javascript" src="fake.js"></script>
+    <script type="text/javascript" src="console.js"></script>
+    <style>
+    ul {
+        padding-left: 3ex;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    button {
+        min-height: 1cm;
+    }
+    </style>
+  </head>
+  <body>
+
+    <nav>
+        <label><input type="radio" name="which" id="visible" checked>Visible browser</label>
+        <label><input type="radio" name="which" id="hidden">Hidden browser</label>
+        <button id="history" style="display: none;">History</button>
+    </nav>
+
+    <pre id="output" style="white-space: pre-line;"></pre>
+
+  </body>
+</html>

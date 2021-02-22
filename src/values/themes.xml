@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ParetoBrowser" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorAccent">@color/teal</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/lightgray</item>
+        <item name="colorPrimaryVariant">@color/deepblue</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow</item>
+        <item name="colorSecondaryVariant">@color/fuchsia</item>
+        <item name="colorOnSecondary">@color/pink</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

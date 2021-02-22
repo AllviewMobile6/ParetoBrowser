@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pink">#FFFF7777</color>
+
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="deepblue">#FF0077FF</color>
+    <color name="skyblue">#FF3355bb</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="fuchsia">#FFFF00FF</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="teal">#FF007777</color>
+
+    <color name="black">#FF000000</color>
+    <color name="lightgray">#FFCCCCCC</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

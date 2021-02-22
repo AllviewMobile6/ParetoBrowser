@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Check for updates</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="utils.js"></script>
+    <script type="text/javascript" src="fake.js"></script>
+    <script type="text/javascript" src="check_for_updates.js"></script>
+    <style>
+    ul {
+        padding-left: 3ex;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    button {
+        min-height: 1cm;
+    }
+    </style>
+  </head>
+  <body>
+
+    <h1>Updates</h1>
+
+    <p id="message">Checking for updates...</p>
+
+    <ul id="changes"></ul>
+
+    <nav>
+        <button id="update" style="display: none;">Update now!</button>
+    </nav>
+
+  </body>
+</html>

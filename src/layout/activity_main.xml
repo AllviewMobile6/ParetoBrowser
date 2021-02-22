@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/uriPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menuButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="7mm"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="☰" />
+
+        <EditText
+            android:id="@+id/uriEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textUri"
+            android:singleLine="true"
+            android:focusable="true"
+            android:ellipsize="middle"
+            android:text="https://" />
+
+        <Button
+            android:id="@+id/openButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="7mm"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="▶" />
+    </LinearLayout>
+
+   <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignParentTop="true"
+        android:max="100"
+        android:progress="50"
+        android:progressTint="@color/red" />
+
+    <WebView
+        android:id="@+id/webViewHidden"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:layout_below="@+id/uriPanel">
+    </WebView>
+
+    <WebView
+        android:id="@+id/webViewVisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/uriPanel">
+        <requestFocus />
+    </WebView>
+
+</RelativeLayout>
