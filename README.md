@@ -1,20 +1,16 @@
-What is pareto browser
-======================
+# What is pareto browser
 
 Most websites can be reduced into few basic archetypes (news site aggregator, news article, discussion, ...). Pareto browser is browser that renders these archetypes. Every website of the same archetype looks and behaves the same, the only difference is content.
 
-Why we need new web
-===================
+# Why we need new web
 
 Modern web is pure garbage. When you visit new page, you have to close 2-3 popups in order to use the website (cookies, subscribe to newsletter, mobile app ad, full screen video ads). Then everything is in small, weirly shaped, ultra thin font in dark gray color on light gray background, barely readable. Blinking elements are everywhere, weird controls on weird places. Website force extra pages to history so when you press back button you have to go through several extra pages. It's a hostile UI mess. Eventually you start to hate it. That's why I created Pareto browser.
 
 Currently Pareto browser is parsing HTML websites and converting them to Pareto websites. If pareto became successfull, it will be possible to bypass old web altogether if people start creating pareto websites directly. Then no conversion will be necessary.
 
-What types of pages are supported
-==========-======================
+# What types of pages are supported
 
-Type 1: Article
----------------
+## Type 1: Article
 
 Typical news article, with pictures. You can read article. There can be comments at the bottom.
 
@@ -58,8 +54,7 @@ Typical news article, with pictures. You can read article. There can be comments
     ]
     }
 
-Type 2: Aggregator
-------------------
+## Type 2: Aggregator
 
 Typical news homepage with list of most recent news articles. You can read article or comments. You can hide articles.
 
@@ -93,8 +88,7 @@ Typical news homepage with list of most recent news articles. You can read artic
     }
 
 
-What didn't make it to this MVP
-===============================
+## What didn't make it to this MVP
 
 - more archetypes (paywalled article, scientific paper, comment reply, slideshow, video, xy chart, bar chart)
 - customized themes (after install user would choose black on white, white on black, or other color scheme, font family, font size, ...)
@@ -113,7 +107,6 @@ What didn't make it to this MVP
 - anchor links should scroll, not reload page
 - I only tested it on Hacker News
 
-What can you do
-===============
+# What can you do
 
 - fork it, make parsers for more websites
