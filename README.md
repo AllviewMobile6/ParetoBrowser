@@ -114,4 +114,5 @@ Typical news homepage with list of most recent news articles. You can read artic
 
 # What can you do
 
+- try the apk
 - fork it, make parsers for more websites
